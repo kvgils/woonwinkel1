@@ -1,0 +1,17 @@
+doctype html
+html(lang='nl')
+    head
+        title Contact
+    body
+        h1 Jade form voor classroom
+        form#container.col(method='POST', action='/pages/contact')
+            label(for='user') Uw naam
+            input(name='user', id='user', type='text')
+            br
+            br
+            label(for='vraag') Wat is uw vraag?
+            input(name='vraag', id='vraag', type='text')
+            br
+            br
+            input(type='submit')
+
